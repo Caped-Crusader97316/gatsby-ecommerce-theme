@@ -40,7 +40,7 @@ const IndexPage = () => {
       {/* Message Container */}
       <div className={styles.messageContainer}>
         <p>
-          This is a demonstration of the Sydney theme adadadd for verse by{' '}
+          This is a addad demonstration of the Sydney theme adadadd for verse by{' '}
           <span className={styles.gold}>matter design.</span>
         </p>
         <p>
@@ -57,36 +57,36 @@ const IndexPage = () => {
         </Container>
       </div>
       {/* new code*/}
-      const breakpointColumnsObj = {
-  default: 3,
-  1100: 2,
-  700: 1
-};
+//       const breakpointColumnsObj = {
+//   default: 3,
+//   1100: 2,
+//   700: 1
+// };
 
-const images = [
-  { id: 1, src: '/banner1.png/640/480/arch' },
-  { id: 2, src: '/banner1.png/640/480/nature' },
-  { id: 3, src: '/banner1.png/640/480/people' },
-  { id: 4, src: '/banner1.png/640/480/tech' },
-  { id: 5, src: '/banner1.png/640/480/animals' },
-];
+// const images = [
+//   { id: 1, src: '/banner1.png/640/480/arch' },
+//   { id: 2, src: '/banner1.png/640/480/nature' },
+//   { id: 3, src: '/banner1.png/640/480/people' },
+//   { id: 4, src: '/banner1.png/640/480/tech' },
+//   { id: 5, src: '/banner1.png/640/480/animals' },
+// ];
 
-const Gallery = () => {
-  return (
-    <Masonry
-      breakpointCols={breakpointColumnsObj}
-      className="my-masonry-grid"
-      columnClassName="my-masonry-grid_column">
-      {images.map((image) => (
-        <div key={image.id}>
-          <img src={image.src} alt={`Image ${image.id}`} />
-        </div>
-      ))}
-    </Masonry>
-  );
-};
+// const Gallery = () => {
+//   return (
+//     <Masonry
+//       breakpointCols={breakpointColumnsObj}
+//       className="my-masonry-grid"
+//       columnClassName="my-masonry-grid_column">
+//       {images.map((image) => (
+//         <div key={image.id}>
+//           <img src={image.src} alt={`Image ${image.id}`} />
+//         </div>
+//       ))}
+//     </Masonry>
+//   );
+// };
 
-export default Gallery;
+// export default Gallery;
 
 
 
