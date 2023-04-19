@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import Masonry from 'react-masonry-css';
 import AttributeGrid from '../components/AttributeGrid';
 import Container from '../components/Container';
 import Hero from '../components/Hero';
@@ -55,6 +56,41 @@ const IndexPage = () => {
           <ProductCollectionGrid />
         </Container>
       </div>
+      {/* new code*/}
+      const breakpointColumnsObj = {
+  default: 3,
+  1100: 2,
+  700: 1
+};
+
+const images = [
+  { id: 1, src: '/banner1.png/640/480/arch' },
+  { id: 2, src: '/banner1.png/640/480/nature' },
+  { id: 3, src: '/banner1.png/640/480/people' },
+  { id: 4, src: '/banner1.png/640/480/tech' },
+  { id: 5, src: '/banner1.png/640/480/animals' },
+];
+
+const Gallery = () => {
+  return (
+    <Masonry
+      breakpointCols={breakpointColumnsObj}
+      className="my-masonry-grid"
+      columnClassName="my-masonry-grid_column">
+      {images.map((image) => (
+        <div key={image.id}>
+          <img src={image.src} alt={`Image ${image.id}`} />
+        </div>
+      ))}
+    </Masonry>
+  );
+};
+
+export default Gallery;
+
+
+
+
 
       {/* New Arrivals */}
       <div className={styles.newArrivalsContainer}>
